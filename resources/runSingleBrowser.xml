@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+
+  <test name="Run Test on FIREFOX UI">
+    <parameter name="browser" value="firefox_ui"></parameter>
+<!--     <parameter name="version" value="80.0.3987.106"></parameter> -->
+    <classes>
+      <class name="com.nopcommerce.framework.Level_14_Sort_Data"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

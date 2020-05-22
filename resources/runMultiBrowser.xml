@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite" parallel="false">
+<!-- <suite name="Suite" parallel="tests" thread-count="4"> -->
+
+  <test name="Run Test on FIREFOX UI">
+   <parameter name="browser" value="firefox_ui"></parameter>
+    <classes>
+      <class name="com.nopcommerce.framework.Level_06"/>
+    </classes>
+  </test> <!-- Test -->
+
+  <test name="Run Test on FIREFOX HEADLESS">
+   <parameter name="browser" value="firefox_headless"></parameter>
+    <classes>
+      <class name="com.nopcommerce.framework.Level_06"/>
+    </classes>
+  </test> <!-- Test -->
+
+  <test name="Run Test on CHROME UI">
+   <parameter name="browser" value="chrome_ui"></parameter>
+    <classes>
+      <class name="com.nopcommerce.framework.Level_06"/>
+    </classes>
+  </test> <!-- Test -->
+
+  <test name="Run Test on CHROME HEADLESS">
+   <parameter name="browser" value="chrome_headless"></parameter>
+    <classes>
+      <class name="com.nopcommerce.framework.Level_06"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

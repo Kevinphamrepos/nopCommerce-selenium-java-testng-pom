@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite" parallel="false">
+<!-- <suite name="Suite" parallel="tests" thread-count="4"> -->
+
+	<listeners>
+		<listener class-name='reportConfig.MethodListener' />
+<!-- 		<listener class-name='retryTest.RetryListener' /> -->
+		<listener class-name='reportScreenshot.ReportNGListener' />
+		<listener class-name='org.uncommons.reportng.HTMLReporter' />
+		<listener class-name='org.uncommons.reportng.JUnitXMLReporter' />
+<!-- 		<listener class-name='reportConfig.ExtentReportListenerV2' /> -->
+<!-- 		<listener class-name='reportScreenshot.ExtentTestListener' /> -->
+	</listeners>
+
+  <test name="Run Test on BRAVE">
+   <parameter name="browser" value="firefox_ui"></parameter>
+<!--    <parameter name="browser" value="brave"></parameter> -->
+   <parameter name="url" value="https://admin-demo.nopcommerce.com/"></parameter>
+<!--    <parameter name="version" value="80.0.3987.106"></parameter> -->
+    <classes>
+      <class name="nopCommerce.backend.NopCommerce_BE_01_SearchFunctionality"/>
+      <class name="nopCommerce.backend.NopCommerce_BE_02_CustomerManage"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
